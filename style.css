@@ -1,0 +1,557 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+
+
+.navbar-expand-lg{
+  
+    
+}
+
+.fas.fa-rocket{
+    padding:10px;
+}
+/*    slider - start */
+
+.slider{
+    
+    width:100%;
+    max-width:1600px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+   
+  
+}
+.slides{
+    width:100%;
+    max-width:1600px;
+    height: 500px;
+    display: flex;
+   
+    
+   
+}
+
+.slides input{
+    display: none;
+}
+.slide img{
+    width: 1000px;
+    height: 500px;
+}
+
+.navigation-manual{
+position: absolute;
+width:100%;
+max-width:1600px;
+margin-top:-40px;
+display: flex;
+justify-content: center;
+}
+
+
+.manual-btn{
+    border:2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+   /* background-color: white;*/
+}
+
+#radio1:checked~.first{
+    margin-left: 0;
+}
+
+#radio2:checked~.first{
+    margin-left: -20%;
+}
+
+#radio3:checked~.first{
+    margin-left: -40%;
+}
+
+#radio4:checked~.first{
+    margin-left: -60%;
+}
+  /*slider-end*/
+
+/*nav auto*/
+
+.navigation-auto{
+
+position: absolute;
+display: flex;
+width:100%;
+    max-width:1600px;justify-content: center;
+margin-top: 460px;
+
+
+}
+
+.navigation-auto div{
+
+
+    border:2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+
+.navigation-auto div:not(:last-child)
+{
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1{
+    background-color: whitesmoke;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2{
+    background-color: whitesmoke;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3{
+    background-color: whitesmoke;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4{
+    background-color: whitesmoke;
+}
+
+
+/*Image part start*/
+#image{
+min-height: 300px;
+margin-top:70px;
+   
+
+}
+#map{
+  width: 100%;
+  height: 500px;
+}
+
+
+#figure {
+    /*float: left;
+    width: 30%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+   */
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    border:none;
+  
+
+  }
+
+
+
+#figure img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  overflow:hidden;
+}
+
+/*image part end*/
+
+/*yt part start*/
+#yt{
+    width:100vw;
+    margin:0 auto;
+    position: relative;
+   
+   
+    
+  
+ 
+    
+
+}
+div.yt{
+ 
+    height: 400px;
+   
+   
+}
+#yt h2{
+   
+  text-align: center;
+   
+  
+}
+
+#filmAndDisc{
+   margin-top:30px ;
+
+
+}
+
+#film{
+    height: 400px;
+   
+ 
+}
+
+#Disc{
+    height: 400px;
+   
+
+  
+}
+/*yt part end*/
+/*convert part start*/
+.label1{
+  color:#70757A;
+}
+
+.label2{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.label3{
+  color:#70757A;
+
+}
+
+.BtnConv{
+  padding:5px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  font-weight: 500;
+ 
+}
+div#convPart.container{
+
+
+
+}
+.firstValue{
+  border-radius: 5px;
+}
+form{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  margin-top: 10px;
+
+}
+
+#columnF{
+  display: flex;
+  flex-direction: column;
+}
+.mainConv{
+  height:500px;
+  background-color: #FFCC44;
+  
+}
+
+
+/*convert part end*/
+  /*progressbar*/
+  .set-size {
+    font-size: 10em;
+  }
+  
+  .charts-container:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  #Progresses{
+   
+display: flex;
+flex-direction: row;
+align-items: center;
+
+  }
+  .pie-wrapper {
+    height: 1em;
+    width: 1em;
+    float: left;
+    margin: 15px;
+    position: relative;
+  }
+  .pie-wrapper:nth-child(3n+1) {
+    clear: both;
+  }
+  .pie-wrapper .pie {
+    height: 100%;
+    width: 100%;
+    clip: rect(0, 1em, 1em, 0.5em);
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  .pie-wrapper .pie .half-circle {
+    height: 100%;
+    width: 100%;
+    border: 0.1em solid #3498db;
+    border-radius: 50%;
+    clip: rect(0, 0.5em, 1em, 0);
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  .pie-wrapper .label {
+    background: #34495e;
+    border-radius: 50%;
+    bottom: 0.4em;
+    color: #ecf0f1;
+    cursor: default;
+    display: block;
+    font-size: 0.25em;
+    left: 0.4em;
+    line-height: 2.8em;
+    position: absolute;
+    right: 0.4em;
+    text-align: center;
+    top: 0.4em;
+  }
+  .pie-wrapper .smaller {
+    color: #3B4B4D;
+    font-size: 0.45em;
+    padding-bottom: 20px;
+    vertical-align: super;
+  }
+  .pie-wrapper .shadow {
+    height: 100%;
+    width: 100%;
+    border: 0.1em solid #bdc3c7;
+    border-radius: 50%;
+  }
+  .pie-wrapper.style-2 .label {
+    background: none;
+    color: #7f8c8d;
+  }
+  .pie-wrapper.style-2 .label .smaller {
+    color: #bdc3c7;
+  }
+ 
+  .pie-wrapper.progress-45 .pie #ls1 {
+ 
+  }
+
+  .pie-wrapper.progress-45 .pie #ls2{
+    background-color: red;;
+  }
+
+  .pie-wrapper.progress-45 .pie .left-side  {
+    transform: rotate(162deg);
+  }
+  .pie-wrapper.progress-45 .pie .right-side {
+    display: none;
+ 
+  }
+  .pie-wrapper.progress-75 .pie {
+    clip: rect(auto, auto, auto, auto);
+  }
+  .pie-wrapper.progress-75 .pie .half-circle {
+    border-color:rgb(166, 211, 217);
+  }
+  .pie-wrapper.progress-75 .pie .left-side {
+    transform: rotate(181deg);
+  }
+  
+  .pie-wrapper.progress-75 .pie .right-side {
+    transform: rotate(180deg);
+  }
+
+ #ls4{
+   border: 0.1em solid yellow;
+ }
+  .pie-wrapper--solid {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .pie-wrapper--solid:before {
+    border-radius: 0 100% 100% 0/50%;
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+  }
+  .pie-wrapper--solid .label {
+    background: transparent;
+  }
+
+  /*progressbar end*/
+.mainProp{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+div#properties.mainProp{
+    background-color: #E3E5E4;
+}
+.mainProp h2{
+  font-size: 50px;
+  color:#3A474B;
+    text-transform: uppercase;
+    text-align: center;
+}
+.mainProp p{
+   
+color:#7B7D7C;
+    text-align: center;
+  
+
+    
+}
+
+#radius p{
+    text-align: left;
+}
+
+.radius{
+    height: 100px;
+    width: 100px;
+   
+}
+
+.fomFom{
+    color:white;
+    display: flex;
+    flex-direction: column;
+     margin-bottom: 50px;
+   align-items: center;
+    margin-top: 20px;
+    min-height: 300px;
+    width: 100%;
+}
+
+.fomFom .col{
+    width: 450px;
+    padding:5px;
+}
+
+.fomFom h2{
+  font-size: 50px;
+  text-transform: uppercase;
+}
+#buttonSub{
+  text-transform: uppercase;
+margin-top:10px;
+margin-bottom: 15px; 
+background-color: #fff;
+color:black;
+border: none;
+margin-top: 15px;
+font-weight: 600;
+
+}
+
+.TuCosPokaz{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.FormPart{
+    background-color: rgb(44, 44, 44);
+}
+
+
+#exampleInputEmail1, #exampleInputPassword1, #exampleFormControlTextarea1
+{
+  align-items: center;
+  
+}
+
+#Hiw{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+
+
+}
+
+.col-6{
+margin:10px;
+}
+.carousel-indicators [data-bs-target]{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  
+  border:2px solid rgba(255, 255, 255, 0.5);;
+}
+
+
+.manual-btn:focus-visible{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators [data-bs-target]{
+  background-color: transparent;
+  }
+
+  .carousel-indicators [data-bs-target]:focus-visible{
+    background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .carousel-caption{
+     top:100px;
+      display: flex;
+      flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  
+      
+    }
+    .carousel-caption h2{
+      text-align: left;
+      text-transform:capitalize;
+    }    
+    .carousel-caption p{
+      text-align: left;
+    }
+
+    .carousel-caption button{
+      text-transform: uppercase;
+      padding: 5px 10px 5px 10px;
+      border:none;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+
+    input{
+      margin-top: 10px;
+    }
